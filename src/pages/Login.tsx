@@ -30,11 +30,11 @@ export default function Login() {
       
       // Verification of admin role
       if (data.user) {
-        const { data: profile } = await supabase
-          .from('profiles')
-          .select('is_admin')
-          .eq('id', data.user.id)
-          .single();
+        // const { data: profile } = await supabase
+        //   .from('profiles')
+        //   .select('is_admin')
+        //   .eq('id', data.user.id)
+        //   .single();
           
         // Temporary: log them in anyway for testing, but in prod uncomment below
         // if (!profile?.is_admin) {
